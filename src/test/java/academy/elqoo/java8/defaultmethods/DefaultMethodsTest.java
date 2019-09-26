@@ -1,7 +1,7 @@
 package academy.elqoo.java8.defaultmethods;
 
 import org.junit.Test;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import java.lang.UnsupportedOperationException;
 
 import java.util.List;
 
@@ -33,8 +33,8 @@ public class DefaultMethodsTest {
 
     }
 
-    @Test(expected = NotImplementedException.class)
-    public void shouldThrowNotImplementedException(){
+    @Test(expected = UnsupportedOperationException.class)
+    public void shouldThrowUnsupportedOperationException(){
         // add an optional method to the shape method
         Triangle triangle = new Triangle();
         // triangle.notImplementedMethod();
